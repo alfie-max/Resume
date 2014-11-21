@@ -1,0 +1,211 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[5pt,a4paper]{moderncv}
+\parskip 0pt
+
+% moderncv themes
+\moderncvtheme[blue]{classic}    
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 
+% 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{graphicx}
+% adjust the page margins
+\usepackage[scale=.9]{geometry}
+
+% manage items
+\usepackage{enumitem}
+
+%\setlength{\hintscolumnwidth}{3cm}						 % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+% optional, remove the line if not wanted
+\firstname{Alfred Dominic}
+
+% optional, remove the line if not wanted
+\familyname{}
+
+% optional, remove the line if not wanted
+\address{Kurisuparambil House, Thaikattukara}{Ernakulam Dist, Kerala, India, Pin:683106}
+
+% optional, remove the line if not wanted
+\mobile{+91-7736143382}
+
+% optional, remove the line if not wanted
+%\phone{+91-484-2620618}
+
+% optional, remove the line if not wanted
+\email{alfie.2012@gmail.com}
+
+% optional, remove the line if not wanted
+%\extrainfo{additional information (optional)}
+
+% '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\photo[75pt]{alfie}
+
+% optional, remove the line if not wanted
+%\quote{computer science \& engineering student, scribus core developer, Google Summer of Code 2010 participant and kde developer. }
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                     % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+%\includegraphics[scale=0.25]{n.jpg}
+
+\maketitle
+
+\section{Objective}
+\cvline{}{To obtain a position as an active employee in a growing, reputable company that encourages continuous learning, creativity and provides atmosphere for personal and professional growth.}
+
+
+%\section{Experience}
+%\subsection{Industry}
+%\cventry{2000 -2011}{IF you have , u acn add  post name }{Firm name}{Kerala}{}{
+%\begin{itemize}%
+%\item small description abt your job.
+%\end{itemize}}
+
+
+\section{Education}
+\cventry{2010-2014}{B.Tech in Electronics and Communication Engineering}
+{Govt Engg College, Sreekrishnapuram}{Kerala, India}
+{\textbf{CGPA 5.37/10}}{University of Calicut, India}
+\cventry{2010}{AISSCE}{Jyothi Nivas Senior Secondary School, Aluva}{Kerala, India}
+{\textbf{Secured 81\%}}{CBSE, New Delhi}
+\cventry{2008}{AISSE}{Jyothi Nivas Public School, Aluva}{Kerala, India}
+{\textbf{Secured 83\%}}{CBSE, New Delhi}
+
+
+\section{Technical skills}
+\cvline{\textbf{Programming Languages}}{C, C++, Python, C\#, Embedded C, LaTeX, Shell Scripting}
+\cvline{\textbf{Frameworks}}{Flask}
+\cvline{\textbf{Operating Systems}}{Linux, Windows}
+\cvline{\textbf{Tools}}{Git, Emacs, Visual Studio, Matlab, Multisim, Circuit Wizard}
+
+
+%\subsection{Major Projects}
+%\cventry{}{project name  }{}{Domain}{}{}
+%\cventry{}{ }{}{}{}{}
+%\cventry{}{ }{}{}{}{}
+
+%\subsection{Self Developed Projects}
+%\cventry{}{project name }{}{Description -  }{}{}
+%\cventry{}{project name }{Description - }{}{}{}
+
+
+\section{Projects}
+
+\cvline{\textbf{Title}}{\emph{\textbf{Publish - Multichannel announcement application}}}
+\cvline{\textbf{Description}}{\small{This project was developed as a part of the Lycaeum Mentoring course. Publish is a multichannel announcement python application. Using this application we can sent out messages to multiple channels at once. Currently Twitter, Facebook, Email and Blogging channels have been implemented.}}
+\small{
+\cvline{}{Languages : Python 2.7}
+\cvline{}{Tools : Git, Emacs}
+\cvline{}{Duration : 45 Days}
+\cvline{}{Public APIs : facebook-sdk, tweepy, mechanize, Pillow, etc.}
+}
+
+\newpage
+\cvline{\textbf{Title}}{\emph{\textbf{Ultrasonic Hover Input Device}}}
+\cvline{\textbf{Description}}{\small{This is an extension of the Project, Ultrasonic Based Hover Input Device. Objective of this project was to improve hardware performance and tracking precision so that a reliable working model can be made. Finally a working device which can recognize hand motions(left, right, up, down) was developed and demonstrated using windows GUI application. I was actively involved in requirements gathering, PCB design and windows application development of the project.}}
+\small{
+\cvline{}{Languages : C\#, Embedded C}
+\cvline{}{Hardware : Atmega 328P MCU}
+\cvline{}{IDE : Visual Studio 2013, Atmel Studio, Circuit Wizard}
+\cvline{}{Duration : 2 months [ Main Project : 7$^{th}$ \& 8$^{th}$ Semester ]}
+}
+
+\cvline{\textbf{Title}}{\emph{\textbf{PC based Wireless Automatic Energy Meter Billing}}}
+\cvline{\textbf{Description}}{\small{Using the PC based Automatic Wireless Energy Meter Billing system getting monthly readings and bill creation is automated for multiple consumers. In case of defaulters the connection is disconnected until payment is made. A GSM module is used for sending and receiving meter readings and bill created. Credit card based payment system has been implemented using RFID tags/reader. I was actively involved in the electricity board side PC application development which controls the overall working of the complete system.}}
+\small{
+\cvline{}{Languages : C\#}
+\cvline{}{Hardware : SIM 300 GSM Module, RFID Reader \& Tags}
+\cvline{}{Database : SQL Server}
+\cvline{}{IDE : Visual Studio 2013}
+\cvline{}{Duration : 30 Days}
+}
+
+\cvline{\textbf{Title}}{\emph{\textbf{Advanced Braille Note Taking System}}}
+\cvline{\textbf{Description}}{\small{The Advanced Braille Note Taking System is a small portable device which contains 8 keys, 6 keys for entering the Braille characters and 2 navigation keys. The device is connected to a computer for permanent storing of data. Speech Synthesizer is used for text to speech conversion to assist the blind. Email service is also implemented. I was actively involved in the PC application development which does speech synthesis for assisting the blind and takes notes which is stored for later access.}}
+\small{
+\cvline{}{Languages : C\#}
+\cvline{}{IDE : Visual Studio 2013}
+\cvline{}{Duration : 30 Days}
+}
+
+\cvline{\textbf{Title}}{\emph{\textbf{Ultrasonic Based Hover Input Device}}}
+\cvline{\textbf{Description}}{\small{In this project we have designed a device which can track hand movements in front of a computer screen using ultrasonic waves. The basic principle of trilateration was used for calculating the position of the hand. For fast calculation and producing the ultrasonic signals Atmega 328P micro-controller was used. Finally the information corresponding to the location of the hand is send to the PC. I was actively involved in requirements gathering, Circuit Design and PCB design.}}
+\small{
+\cvline{}{Languages : Embedded C}
+\cvline{}{Hardware : Atmega 328P MCU}
+\cvline{}{IDE : Atmel Studio, Circuit Wizard}
+\cvline{}{Duration : 30 Days [ Mini Project : 6$^{th}$ Semester ]}
+}
+
+
+\section{Training}
+\cvline{Title}{\emph{Embedded Systems Training}}
+\cvline{Description}{\small{Attended the training on Basics of Embedded System at Focuz Infotech, Edappally, Kochi}}
+
+\cvline{Title}{\emph{Lycaeum Mentoring Course}}
+\cvline{Description}{\small{Attended a course which covered Unix Programming, shell scripting and basic tools like git for version control and Python programming at The Lycaeum, Calicut}}
+
+
+\section{Achievements}
+\begin{itemize}[noitemsep,nolistsep]
+\cvline{}{\item  Participated in Yuva Mastermind 2014 Exhibition for the Project - Ultrasonic Hover Input Device}
+\cvline{}{\item  Completed University Of Toronto's Non-Credit Online Course - Learn to Program: The Fundamentals}
+\cvline{}{\item  Organized and volunteered events for Invento'12 (Tech Fest of GEC Palakkad)}
+\cvline{}{\item  Have hosted and set up LAN gaming events}
+\end{itemize}
+
+
+\section{Area of Interest}
+\begin{itemize}[noitemsep,nolistsep]
+\cvline{}{\item Software Design \& Development}
+\cvline{}{\item Embedded System}
+\end{itemize}
+
+
+\section{Strengths}
+\cvline{}{Honest, Ethical, Ability to learn new technologies quickly,}
+\cvline{}{Good managerial and co-ordination skills, Collaboration with other team members,}
+\cvline{}{Excellent verbal and written communication skills.}
+
+
+\section{Personal Information}
+\cvline{DOB}{12/07/1992}
+\cvline{Sex} {Male}
+\cvline{Marital Status} {Single}
+\cvline{Languages} {English, Hindi, Malayalam}
+\cvline{Nationality} {Indian}
+\cvline{Hobbies} {Reading, Web Browsing, Watching Movies, Traveling, Music}
+
+
+\section{Declaration}
+\cvline{} {I hereby declare that the above written particulars are true to the best of my knowledge and belief.}
+
+
+\vspace{.5cm}
+Place: Ernakulam \\
+Date : \today
+
+\end{document}
